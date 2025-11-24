@@ -1,0 +1,17 @@
+version: '1'
+
+services:
+  webapp:
+    container_name: cloudbeds_app
+    restart: always
+    build: .
+    ports:
+      - "4000:3000"
+    links:
+      - database
+  database:
+    container_name: cloudbeds_db
+    image: mongo
+    ports:
+      - "27017:27017"
+  

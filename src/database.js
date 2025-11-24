@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/cloudbeds';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://128.24.43.145:27017/Cloudbeds';
 
 const connectDB = async () => {
   try {
