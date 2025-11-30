@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/diegoalonzomora/backend_so#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0",
     "mongoose": "^9.0.0"
   }
