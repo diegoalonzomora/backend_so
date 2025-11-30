@@ -6,7 +6,7 @@ const HabitacionSchema = new Schema(
     pisoHabitacion: { type: Number, required: true },
     capacidad: { type: Number, required: true },
     tipoHabitacion: { type: String, enum: ['Doble', 'Individual', 'Familiar', 'Suite'], required: true },
-    estado: { type: String, enum: ['Disponible', 'Ocupada', 'Mantenimiento'], required: true },
+    estado: { type: String, enum: ['Disponible', 'Ocupada', 'Mantenimiento', 'Inactivo'], required: true },
     precioNoche: { type: Number, required: true },
     descripcion: { type: String, required: true },
     idHotel: { type: Types.ObjectId, required: true, ref: 'Hotel' },
